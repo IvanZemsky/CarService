@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'ReformaGroteskDemiC';
+    src: url(../fonts/ReformaGroteskDemiC/ReformaGroteskDemiC.eot) format('embedded-opentype'),
+    url(../fonts/ReformaGroteskDemiC/ReformaGroteskDemiC.ttf) format('truetype'),
+    url(../fonts/ReformaGroteskDemiC/ReformaGroteskDemiC.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ReformaGroteskMediumC';
+    src: url(../fonts/ReformaGroteskMediumC/ReformaGroteskMediumC.eot) format('embedded-opentype'),
+    url(../fonts/ReformaGroteskMediumC/ReformaGroteskMediumC.ttf) format('truetype'),
+    url(../fonts/ReformaGroteskMediumC/ReformaGroteskMediumC.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ReformaGroteskBoldC';
+    src: url(../fonts/ReformaGroteskBoldC/ReformaGroteskBoldC.eot) format('embedded-opentype'),
+    url(../fonts/ReformaGroteskBoldC/ReformaGroteskBoldC.ttf) format('truetype'),
+    url(../fonts/ReformaGroteskBoldC/ReformaGroteskBoldC.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-size: 24px;
+    color: #FFF;
+}
+
+a, a:focus{
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1326px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* page-rhombus */
+
+.page-rhombus{
+    display: flex;
+    gap: 30px;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.page-rhombus__item{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #DB3138;
+    transform: rotate(45deg);
+}
+
+/* Header */
+
+.header{
+    font-family: 'ReformaGroteskMediumC';
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    min-height: 108px;
+}
+
+.header__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__list-link{
+    color: #FFF;
+    letter-spacing: 0.03em;
+}
+
+.header__logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 25px;
+}
+
+.header__logo-line{
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #DB3138;
+}
+
+.header__logo-line:first-child,
+.header__logo-line:last-child{
+    align-self: flex-end;
+}
+
+/* Intro */
+
+.intro{
+    padding-top: 237px;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%),
+    url(../img/intro/intro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.intro-top__center-block{
+    max-width: 483px;
+    margin: 0 auto;
+}
+
+.intro-top__title{
+    font-family: 'ReformaGroteskBoldC';
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 125%;
+    text-align: center;
+    color: #DB3138;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.intro-rhombus{
+    margin-bottom: 41px;
+}
+
+.intro-top__desc{
+    font-family: 'ReformaGroteskMediumC';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    max-width: 437px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.intro-top__link{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    height: 61px;
+}
+
+.intro-top__link:hover .intro-top__link-bg{
+    width: 100%;
+}
+
+.intro-top__link-bg{
+    width: 110px;
+    height: 100%;
+    background-color: #DB3138;
+    transition: .2s;
+}
+
+.intro-top__link-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 15px 5px 12px 25px;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
