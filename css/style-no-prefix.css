@@ -30,6 +30,7 @@ body{
     font-style: normal;
     font-size: 24px;
     color: #FFF;
+    background-color: #141414;
 }
 
 a, a:focus{
@@ -42,6 +43,16 @@ a, a:focus{
     max-width: 1326px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+/* page-title */
+
+.page__title{
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 /* page-rhombus */
@@ -94,6 +105,15 @@ a, a:focus{
 .header__list-link{
     color: #FFF;
     letter-spacing: 0.03em;
+    transition: .15s;
+}
+
+.header__list-link:hover{
+    color: #DB3138;
+}
+
+.header__list-link:active{
+    filter: brightness(90%);
 }
 
 .header__logo{
@@ -238,6 +258,83 @@ span.intro-btm__info-text:nth-child(2){
     margin-bottom: 15px;
 }
 
+/* Achieve */
+
+.achieve__content{
+    padding: 180px 0;
+}
+
+.achieve__wrap{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+    gap: 35px 24px;
+}
+
+.achieve__desc-title{
+    margin-bottom: 40px;
+}
+
+.achieve-rhombus{
+    margin: 0 0 40px 0;
+}
+
+.achieve__desc-text{
+    font-family: 'ReformaGroteskMediumC';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    max-width: 526px;
+}
+
+.achieve__cards{
+    display: flex;
+}
+
+.achieve__cards-right{
+    padding-top: 40px;
+}
+
+.achieve__card{
+    border: 1px solid rgba(216, 216, 216, 0.5);
+    padding: 25px 20px 35px 20px;
+    max-width: 319px;
+}
+
+.achieve__card-title{
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DB3138;
+}
+
+.achieve__card-title span{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DB3138;
+}
+
+.achieve__card-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.achieve__card-img{
+    max-width: fit-content;
+    margin: 0 auto 22px auto;
+}
 
 
 
