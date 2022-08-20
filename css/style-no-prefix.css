@@ -66,7 +66,7 @@ a, a:focus{
 .header{
     font-family: 'ReformaGroteskMediumC';
     font-weight: 500;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -129,6 +129,7 @@ a, a:focus{
 .intro-top__center-block{
     max-width: 483px;
     margin: 0 auto;
+    margin-bottom: 103px;
 }
 
 .intro-top__title{
@@ -191,6 +192,52 @@ a, a:focus{
     padding: 15px 5px 12px 25px;
     color: #FFF;
 }
+
+.intro-btm__info{
+   display: grid;
+   grid-template-columns: repeat(3, minmax(350px, 1fr)); 
+}
+
+.intro-btm__info-block:not(:last-child){
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.intro-btm__info-block{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 50px;
+}
+
+.intro-btm__info-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.intro-btm__info-text{
+    font-weight: 600;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DB3138;
+    max-width: 265px;
+    margin: 0 auto;
+}
+
+span.intro-btm__info-text{
+    display: block;
+}
+
+span.intro-btm__info-text:nth-child(2),
+span.intro-btm__info-text:nth-child(2){
+    margin-bottom: 15px;
+}
+
 
 
 
