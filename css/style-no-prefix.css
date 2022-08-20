@@ -82,7 +82,6 @@ a, a:focus{
     height: 50px;
     border: 3px solid #DB3138;
     transform: rotate(-45deg);
-    padding: 0 16px;
     cursor: pointer;
 }
 
@@ -91,10 +90,8 @@ a, a:focus{
 }
 
 .page-arrow__img img{
-    max-width: 16px;
-    min-width: 16px;
-    max-height: 25px;
-    min-height: 25px;
+    width: 16px;
+    height: 25px;
 }
 
 /* Header */
@@ -375,7 +372,9 @@ span.intro-btm__info-text:nth-child(2){
 }
 
 .main-slider__slider{
-    display: flex;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50px 1fr 50px;
     justify-content: center;
     align-items: center;
     gap: 80px;
@@ -432,6 +431,78 @@ span.intro-btm__info-text:nth-child(2){
     z-index: 10;
 }
 
+/* Info Info-one */
+
+.info-one{
+    margin-bottom: 180px;
+}
+
+.info__wrap{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: minmax(400px, 526px) minmax(400px, 636px);
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.info__desc-subtitle{
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    margin-bottom: 30px;
+}
+
+.info__desc-subtitle__text{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.info__desc-text{
+    font-family: 'ReformaGroteskMediumC';
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    margin-bottom: 40px;
+}
+
+.info-rhombus{
+    margin: 0 auto 40px auto;
+}
+
+.info__slider{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__slider-photo img{
+    min-height: 550px;
+    object-fit: cover;
+}
+
+.info__slider-arrows{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50px auto 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 33px;
+    min-height: 71px;
+    padding: 0 10px;
+    margin-top: auto;
+}
+
+.info__slider-text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    max-width: 422px;
+}
 
 
 
