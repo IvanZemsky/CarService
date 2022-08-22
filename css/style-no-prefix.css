@@ -83,6 +83,16 @@ a, a:focus{
     border: 3px solid #DB3138;
     transform: rotate(-45deg);
     cursor: pointer;
+    user-select: none;
+    transition: .15s;
+}
+
+.page-arrow:hover{
+    background-color: #DB3138;
+}
+
+.page-arrow:active{
+    filter: brightness(80%);
 }
 
 .page__arrow-two{
@@ -484,6 +494,10 @@ span.intro-btm__info-text:nth-child(2){
     flex-direction: column;
 }
 
+.info__slider-photo{
+    margin-bottom: 15px;
+}
+
 .info__slider-photo img{
     min-height: 550px;
     object-fit: cover;
@@ -626,7 +640,21 @@ span.intro-btm__info-text:nth-child(2){
     order: 1;
 }
 
+/* Works */
 
+.works-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.works-rhombus{
+    margin-bottom: 60px;
+}
+
+.works__gallery{
+    display: flex;
+    justify-content: center;
+}
 
 
 
