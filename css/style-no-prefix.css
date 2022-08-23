@@ -30,7 +30,7 @@ body{
     font-style: normal;
     font-size: 24px;
     color: #FFF;
-    background-color: #141414;
+    background-color: #1E1E1E;
 }
 
 a, a:focus{
@@ -226,7 +226,7 @@ a, a:focus{
     width: 110px;
     height: 100%;
     background-color: #DB3138;
-    transition: .2s;
+    transition: .15s;
 }
 
 .intro-top__link-text{
@@ -614,7 +614,7 @@ span.intro-btm__info-text:nth-child(2){
     width: 57%;
     height: 100%;
     background-color: #DB3138;
-    transition: .2s;
+    transition: .15s;
 }
 
 .services__card-link-text{
@@ -739,7 +739,7 @@ span.intro-btm__info-text:nth-child(2){
 .connect__form-textarea{
     grid-row: 1 / 4;
     padding: 15px 25px;
-    background-color: #141414;
+    background-color: #1E1E1E;
     border: 1px solid #898989;
     color: #FFF;
     resize: none;
@@ -781,6 +781,7 @@ span.intro-btm__info-text:nth-child(2){
     background-color: #DB3138;
     width: 58%;
     height: 100%;
+    transition: .15s;
 }
 
 .connect__form-btn-text{
@@ -820,6 +821,7 @@ span.intro-btm__info-text:nth-child(2){
     text-transform: uppercase;
     padding-left: 37px;
     background-position: center left 0;
+    background-size: 22px auto;
 }
 
 .connect-location{
@@ -833,6 +835,52 @@ span.intro-btm__info-text:nth-child(2){
 .connect-email{
     background-image: url(../img/connect/connect-letter.svg);
 }
+
+/* Footer */
+
+.footer{
+    border-top: 1px solid #898989;
+}
+
+.footer__wrap{
+    padding: 34px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px 35px;
+}
+
+.footer__wrap-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__wrap-links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer__wrap-link-item{
+    font-family: 'ReformaGroteskMediumC';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    transition: .15s;
+}
+
+.footer__wrap-link-item:hover{
+    color:#DB3138
+}
+
+
 
 
 
