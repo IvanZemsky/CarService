@@ -35,7 +35,6 @@ body{
 
 a, a:focus{
     outline: none;
-    border: none;
     text-decoration: none;
 }
 
@@ -625,7 +624,7 @@ span.intro-btm__info-text:nth-child(2){
     width: 100%;
     height: 100%;
     display: block;
-    padding: 8px 10px 8px 20px;
+    padding: 8px 5px 8px 20px;
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
@@ -642,6 +641,10 @@ span.intro-btm__info-text:nth-child(2){
 
 /* Works */
 
+.works{
+    margin-bottom: 120px;
+}
+
 .works-title{
     text-align: center;
     margin-bottom: 40px;
@@ -656,8 +659,180 @@ span.intro-btm__info-text:nth-child(2){
     justify-content: center;
 }
 
+/* Connect */
 
+.connect{
+    margin-bottom: 100px;
+}
 
+.connect-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.connect-rhombus{
+    margin-bottom: 60px;
+}
+
+.connect__form{
+    max-width: 636px;
+    margin: 0 auto;
+}
+
+.connect__form-inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.connect__form-input,
+.connect__form-textarea{
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    transition: .15s;
+}
+
+.connect__form-input{
+    display: block;
+    padding: 15px 25px 10px;
+    background-color: #141414;
+    border: 1px solid #898989;
+    color: #FFF;
+    transition: .15s;
+}
+
+.connect__form-input::placeholder,
+.connect__form-textarea::placeholder{
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #898989;
+}
+
+.connect__form-input:focus,
+.connect__form-textarea:focus{
+    border-color: #DB3138;
+}
+
+.connect__form-input:focus::placeholder,
+.connect__form-textarea:focus::placeholder{
+    color: #FFF;
+}
+
+.connect__form-message{
+    display: grid;
+    grid-template-rows: repeat(3, 40px);
+    grid-template-columns: 1fr 40px;
+    gap: 15px 70px;
+    margin-bottom: 24px;
+}
+
+.connect__form-textarea{
+    grid-row: 1 / 4;
+    padding: 15px 25px;
+    background-color: #141414;
+    border: 1px solid #898989;
+    color: #FFF;
+    resize: none;
+}
+
+.connect__form-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #898989;
+}
+
+.connect__form-link img{
+    width: 20px;
+    height: auto;
+}
+
+.connect__form-link:hover{
+    border-color: #DB3138;
+}
+
+.connect__form-send{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.connect__form-btn{
+    position: relative;
+    display: block;
+    width: 124px;
+    height: 61px;
+    padding: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.connect__form-btn-bg{
+    background-color: #DB3138;
+    width: 58%;
+    height: 100%;
+}
+
+.connect__form-btn-text{
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 15px 5px 12px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.connect__form-btn:hover .connect__form-btn-bg{
+    width: 100%;
+}
+
+.connect__form-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 13px 30px;
+    max-width: 315px;
+}
+
+.connect__form-info-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-left: 37px;
+    background-position: center left 0;
+}
+
+.connect-location{
+    background-image: url(../img/connect/connect-location.svg);
+}
+
+.connect-phone{
+    background-image: url(../img/connect/connect-phone.svg);
+}
+
+.connect-email{
+    background-image: url(../img/connect/connect-letter.svg);
+}
 
 
 
