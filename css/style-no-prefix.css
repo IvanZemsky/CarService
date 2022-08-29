@@ -551,6 +551,7 @@ span.intro-btm__info-text:nth-child(2){
 
 .services__buttons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
     max-width: fit-content;
@@ -885,6 +886,7 @@ span.intro-btm__info-text:nth-child(2){
 
 .footer__wrap-links{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
 }
@@ -1156,6 +1158,39 @@ span.intro-btm__info-text:nth-child(2){
 }
 
 @media (max-width: 510px) {
+
+    .services__cards {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+    
+    .connect__form-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .connect__form-message{
+        grid-template-rows: 155px 40px;
+        grid-template-columns: 1fr repeat(3, 40px);
+        gap: 24px;
+    }
+
+    .connect__form-textarea{
+        grid-row: 1 / 1;
+        grid-column: 1 / 5;
+    }
+
+    .connect-tg{
+        grid-column: 2 / 3;
+    }
+
+    .connect__form-send{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .connect__form-info{
+        justify-content: center;
+    }
     
 }
 
