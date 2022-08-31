@@ -328,6 +328,15 @@ span.intro-btm__info-text:nth-child(2){
 
 .achieve__cards{
     display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 385px) {
+
+    .achieve__cards{
+        flex-wrap: wrap;
+    }
+
 }
 
 .achieve__cards-right{
@@ -683,6 +692,18 @@ span.intro-btm__info-text:nth-child(2){
     justify-content: center;
 }
 
+@media (max-width: 680px) {
+    .works__gallery-photos:first-child{
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .works__gallery-photos:last-child{
+        display: none;
+    }
+}
+
 /* Connect */
 
 .connect{
@@ -1004,7 +1025,7 @@ span.intro-btm__info-text:nth-child(2){
     }
 
     .main-slider__card{
-        grid-template-rows: 284px 1fr;
+        grid-template-rows: 284px auto;
     }
 
     .main-slider__card:nth-child(3) {
@@ -1013,6 +1034,7 @@ span.intro-btm__info-text:nth-child(2){
 
     .main-slider__card-img img {
         min-height: 284px;
+        max-width: auto;
     }
 
 }
@@ -1129,7 +1151,7 @@ span.intro-btm__info-text:nth-child(2){
 
     .main-slider__slider {
         grid-template-rows: auto auto;
-        grid-template-columns: 145px 145px;
+        grid-template-columns: repeat(2, minmax(55px, 145px));
         gap: 60px;
     }
 
@@ -1147,10 +1169,6 @@ span.intro-btm__info-text:nth-child(2){
         justify-self: flex-start;
     }
 
-    .works__gallery-photos:first-child{
-        display: none;
-    }
-
     .info__slider-photo img{
         min-height: 395px;
     }
@@ -1158,6 +1176,33 @@ span.intro-btm__info-text:nth-child(2){
 }
 
 @media (max-width: 510px) {
+
+    .info__desc-subtitle__text{
+        font-size: 25px;
+        line-height: 120%;
+    }
+
+    .info__slider-photo{
+        margin-bottom: 30px;
+    }
+
+    .info__slider-arrows{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 30px 45px;
+    }
+
+    .info__slider-arrows .page-arrow:first-child{
+        justify-self: flex-end;
+    }
+    
+
+    .info__slider-text{
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        font-size: 14px;
+        line-height: 110%;
+    }
 
     .services__cards {
         grid-template-rows: auto;
@@ -1193,7 +1238,6 @@ span.intro-btm__info-text:nth-child(2){
     }
     
 }
-
 
 
 
