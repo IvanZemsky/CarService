@@ -462,7 +462,7 @@ span.intro-btm__info-text:nth-child(2){
 
 /* Info Info-one */
 
-.info-one{
+.info{
     margin-bottom: 180px;
 }
 
@@ -481,18 +481,26 @@ span.intro-btm__info-text:nth-child(2){
 }
 
 .info__desc-subtitle{
-    display: flex;
-    align-items: center;
-    gap: 37px;
+    padding: 14px 0 14px 95px;
     margin-bottom: 30px;
-}
-
-.info__desc-subtitle__text{
     font-weight: 600;
     font-size: 32px;
     line-height: 140%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    background-position: 1px center;
+}
+
+.info-one__desc-block:nth-child(1) .info__desc-subtitle{
+    background-image: url(../img/main/info-subtitle-1.svg);
+}
+
+.info-one__desc-block:nth-child(3) .info__desc-subtitle{
+    background-image: url(../img/main/info-subtitle-2.svg);
+}
+
+.info-one__desc-block:nth-child(5) .info__desc-subtitle{
+    background-image: url(../img/main/info-subtitle-3.svg);
 }
 
 .info__desc-text{
@@ -670,6 +678,18 @@ span.intro-btm__info-text:nth-child(2){
 
 .info-two__desc{
     order: 1;
+}
+
+.info-two__desc-block:nth-child(1) .info__desc-subtitle{
+    background-image: url(../img/main/info-subtitle-4.svg);
+}
+
+.info-two__desc-block:nth-child(3) .info__desc-subtitle{
+    background-image: url(../img/main/info-subtitle-1.svg);
+}
+
+.info-two__desc-block:nth-child(5) .info__desc-subtitle{
+    background-image: url(../img/main/info-subtitle-2.svg);
 }
 
 /* Works */
