@@ -843,6 +843,7 @@ span.intro-btm__info-text:nth-child(2){
 }
 
 .connect__form-btn-bg{
+    display: block;
     background-color: #DB3138;
     width: 58%;
     height: 100%;
