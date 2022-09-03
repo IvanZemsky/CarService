@@ -1155,6 +1155,10 @@ span.intro-btm__info-text:nth-child(2){
         grid-template-columns: minmax(275px, 1fr);
     }
 
+    .intro-btm__info-block{
+        border-top: none;
+    }
+
     .intro-btm__info-block:first-child{
         grid-row: 1 / 2;
         grid-column: 1 / 2;
