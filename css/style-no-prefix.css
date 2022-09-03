@@ -177,7 +177,7 @@ a, a:focus{
 .intro{
     padding-top: 237px;
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%),
-    url(../img/intro/intro-bg.jpg);
+    url(../img/intro/intro-webp/intro-bg.webp);
     background-size: cover;
     background-position: center center;
 }
