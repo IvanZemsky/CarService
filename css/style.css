@@ -1308,7 +1308,6 @@ span.intro-btm__info-text:nth-child(2){
 
     .main-slider__card-img img {
         min-height: 284px;
-        max-width: auto;
     }
 
 }
@@ -1441,10 +1440,6 @@ span.intro-btm__info-text:nth-child(2){
         grid-template-columns: minmax(275px, 1fr);
     }
 
-    .intro-btm__info-block{
-        border-top: none;
-    }
-
     .intro-btm__info-block:first-child{
         -ms-grid-row: 1;
         -ms-grid-row-span: 1;
@@ -1539,11 +1534,6 @@ span.intro-btm__info-text:nth-child(2){
         grid-template-columns: 1fr;
     }
 
-    .services__cards > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-    }
-    
     .connect__form-inputs {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
